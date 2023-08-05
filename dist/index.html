@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Raleway:ital,wght@1,600&display=swap" rel="stylesheet">
+    <title>Login Page</title>
+     <!-- Icons Used For Login -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <link rel= "stylesheet" href="dist/style.css">
+     <script defer src="/backend.js"></script>
+<script defer src="bundle.js"></script></head>
+<body class="L__body">
+    <div class = "L__wrapper">
+        <form action="">
+            <h1 class="L__wrapper--h1">Login</h1>
+            <!-- For User Name Input Box -->
+            <div class="L__inputBox">
+                <input type="text" placeholder="Username" class="L__inputBox--ip" id="txtEmail">
+                <i class='bx bxs-user-pin L__i' ></i>
+            </div>
+            <!-- For User Password Input Box -->
+            <div class="L__inputBox" id="txtPassword">
+                <input type="password" placeholder="Password" class="L__inputBox--ip">
+                <i class='bx bxs-lock L__i' ></i>
+            </div>
+            <!-- Error Message -->
+            <div id="divLoginError" class="L__forgetPass">
+                <div id="lblLoginErrorMessage" class="errorlabel"></div>
+              </div>
+
+            <div class="L__forgetPass">
+                <label><input type="checkbox" name="">Remember me</label>
+                
+                <a href="#">forget Password</a>
+            </div>
+            <!-- BUTTONs -->
+            <button type="submit" class="L__btn" id="btnLogin">
+                Login
+            </button>
+            <button type="submit" class="L__btn" id="btnSignup">
+                Sign up
+            </button>
+            <button type="submit" class="L__btn" id="signInWithGoogleButton">
+                Log in with Google 
+            </button>
+
+            <div class="L__register">
+                <p>Don't have account?
+                    <a href="#">Register Today</a>
+                </p>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+</html>

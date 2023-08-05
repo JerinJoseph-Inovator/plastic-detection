@@ -1,0 +1,104 @@
+@use '../util/' as *;
+
+.L {
+    &__body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: var(--font-inter), sans-serif;   
+        background: var(--background);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: url('/socialmedia/Elephant.jpg') no-repeat;
+        background-position: right bottom;     
+    }
+
+    &__wrapper{
+        width: rem(420);
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, .2);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 rem(10) rgba(0, 0, 0, .2);
+        color: whitesmoke;
+        border-radius: rem(10);
+        padding: rem(30);
+
+        &--h1{
+            font-size: rem(36);
+            text-align: center;
+        }
+
+    }
+
+
+    &__inputBox{
+        position: relative;
+        width: 100%;
+        height: rem(50);
+        margin: rem(30) 0;
+
+        &--ip{
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 2px solid rgba(255, 255, 255, .2); 
+            border-radius: rem(40);
+            font-size: rem(16);
+            color: snow;
+            padding: 20px 45px 20px 20px;
+
+        }
+
+        ::placeholder{
+            color: snow;
+
+        }
+
+    }
+
+    &__i{
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+    }
+
+
+
+    &__forgetPass{
+        display: flex;
+        justify-content: space-around;
+        font-size: 14.5px;
+        margin: -15px 0 15px;
+    }
+
+    &__btn{
+        width: 100%;
+        height: rem(45);
+        background: snow;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        cursor: pointer;
+        font-size: rem(16);
+        color: #333;
+        font-weight: 700;
+        position: relative;
+        width: 100%;
+        height: rem(40);
+        margin: rem(5) 0;
+
+    }
+
+    &__register{
+        font-size: rem(14.5);
+        text-align: center;
+        margin-top: 20px;
+    }
+}
